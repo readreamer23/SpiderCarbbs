@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
+encoding//crawler/autohome_koubei_firefox.py=utf-8
+encoding//crawler/autohome_koubei_firefox_all.py=utf-8
+encoding//crawler/headless/autohome_bbs_total_headless.py=utf-8
 encoding//crawler/headless/autohome_content_headless_firefox.py=utf-8
 encoding//crawler/headless/autohome_content_headless_phantomjs.py=utf-8
+encoding//crawler/headless/autohome_gettopiclist_headless.py=utf-8
 encoding//crawler/mongoutil.py=utf-8

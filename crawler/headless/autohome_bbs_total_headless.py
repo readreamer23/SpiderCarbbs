@@ -30,8 +30,6 @@ def getTotalBBSContent(url,title):
     
     
 if __name__=='__main__':
-    #title1='荣威MARVEL X论坛'
-    #url1='https://club.autohome.com.cn/bbs/forum-c-4653-1.html'
     title='荣威RX5论坛页'
     url='https://club.autohome.com.cn/bbs/forum-c-4080-1.html'   
     getTotalBBSContent(url,title)

@@ -1,6 +1,5 @@
 #coding:utf-8
 from bs4 import BeautifulSoup
-import sys
 import time,random
 from crawler.mongoutil import insertMongo2
 from selenium import webdriver
@@ -17,7 +16,6 @@ wait = WebDriverWait(browser, 8)
 
 #爬取所有分页评论相关内容
 def getBBSTitleUrlList(url,i):
-    #拼接url： pvareaid是动态id,后期需研究汽车之家的id获取规则
     if i>1:
         url=url.replace('1.html', str(i)+'.html'+'?qaType=-1#pvareaid='+'101061')
     
@@ -54,9 +52,6 @@ def getBBSTitleUrlList(url,i):
      
 #获取评论分页个数
 def getpagecount(url):
-    #res=configutil.getResponse4Proxy(url)
-    #res=configutil.getResponse(url)
-    #content=res.text
     browser.get(url)
     content = browser.page_source
     soup=BeautifulSoup(content,'html.parser')
@@ -86,10 +81,7 @@ def getTotalBBSTopicList(url):
 
 
 if __name__=='__main__':
-    #第二页   https://club.autohome.com.cn/bbs/forum-c-4080-2.html?qaType=-1#pvareaid=101061
-    #第三页   https://club.autohome.com.cn/bbs/forum-c-4080-3.html?qaType=-1#pvareaid=101061
-    #URL特点是后缀id加1
-    #此页面为汽车之家论坛-->荣威RX5/RX5新能源论坛  的首页
+    #此页面为汽车之家论坛-->荣威RX5/RX5新能源论坛  的首页(URL特点是后缀id加1)
     url='https://club.autohome.com.cn/bbs/forum-c-4080-1.html'
     getTotalBBSTopicList(url)
     

@@ -1,4 +1,4 @@
-beautifulSoup
-selenium
-pymongo
-pyquery
+beautifulSoup==4.6.3
+selenium==3.14.0
+pymongo==3.7.1
+pyquery==1.4.0

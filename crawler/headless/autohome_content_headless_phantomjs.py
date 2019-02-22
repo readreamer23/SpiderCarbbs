@@ -1,5 +1,4 @@
 #coding:utf-8
-import requests
 from bs4 import BeautifulSoup
 from datetime import date
 import time,random

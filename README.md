@@ -21,9 +21,13 @@ pip install -r  requirements.txt
 5.爬取汽车之家口碑数据      autohome_koubei_firefox_all
 	   
 	
-6. headless目录：Linux环境运行无客户端selenium浏览器形式
+6. headless目录：Linux环境运行无客户端selenium唤起浏览器爬虫脚本
 	
-7.作者联系方式
+	
+7.mongodb下载地址	
+	https://www.mongodb.com
+	
+8.作者联系方式
   QQ :  1140093856
      邮箱:  lihui1919@sina.com	
      

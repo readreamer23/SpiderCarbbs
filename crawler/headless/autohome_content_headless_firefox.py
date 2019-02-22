@@ -78,8 +78,6 @@ def insertMongoBBS(content):
 
 #获取评论分页个数
 def getpagecount(url):
-    #res=configutil.getResponse(url)
-    #content=res.text
     browser.get(url)
     content = browser.page_source
     soup=BeautifulSoup(content,'html.parser')
@@ -110,7 +108,6 @@ def getTitleBBSContent(url):
 
     
 if __name__=='__main__':
-    #url='https://club.autohome.com.cn/bbs/thread/05c6690871d9201b/59501783-1.html'
     url='https://club.autohome.com.cn/bbs/thread/f8da97ec4a997e04/75352066-1.html#pvareaid=2199101'
     getTitleBBSContent(url)
     

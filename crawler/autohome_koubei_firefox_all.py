@@ -3,7 +3,6 @@ import time,random
 import pymongo
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-#from config import *
 from crawler.mongoutil import insertMongoKoubei
 from bs4 import BeautifulSoup
 from crawler.seleniumutil import getBrowserFirefox

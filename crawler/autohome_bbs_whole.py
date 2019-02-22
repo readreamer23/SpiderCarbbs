@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from datetime import date
 import time,random
 from crawler.mongoutil import insertMongo1
-from crawler.seleniumutil import getBrowserFirefox, closeBrowser
+from crawler.seleniumutil import getBrowserFirefox
 
 browser=getBrowserFirefox()
 
@@ -63,7 +63,6 @@ def getpagecount(url):
     if gopage is None:
         print('获取分页对象gopage是None')
         print('获取页面分页个数时的页面全部内容如下')
-        #print(content)
         return 1
         
     objgopage=gopage.find(class_='fs')
